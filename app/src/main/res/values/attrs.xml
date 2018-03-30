@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="home_Navigation">
+        <attr name="home_FontSize" format="reference|dimension"/>
+        <attr name="home_EnlargeRate" format="reference|float"/>
+        <attr name="home_FontColorNormal" format="reference|color"/>
+        <attr name="home_FontColorSelect" format="reference|color"/>
+        <attr name="home_FontColorLight" format="reference|color"/>
+        <attr name="home_DefaultPos" format="reference|integer"/>
+
+        <attr name="home_OrderMode" format="reference|string"/>
+        <attr name="home_ItemSpace" format="reference|dimension"/>
+    </declare-styleable>
+</resources>

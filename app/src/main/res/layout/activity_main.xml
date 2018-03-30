@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:navigation="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_main"
+    android:clipChildren="false">
+
+    <TextView
+        android:id="@+id/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/selector_text_bg"
+        android:focusable="true"
+        android:nextFocusDown="@id/mNavigationLinearLayout_id"
+        android:nextFocusLeft="@id/statusbar"
+        android:nextFocusRight="@id/statusbar"
+        android:nextFocusUp="@id/statusbar"
+        android:text="我是一个状态栏，按下可回到导航栏"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <com.hxxdashai.android.navigation.widget.NavigationLinearLayout
+        android:id="@+id/mNavigationLinearLayout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        navigation:home_DefaultPos="1"
+        navigation:home_EnlargeRate="1.3"
+        navigation:home_FontColorLight="#cc0033"
+        navigation:home_FontColorNormal="#4EEE94"
+        navigation:home_FontColorSelect="#7777FF"
+        navigation:home_FontSize="10sp"
+        navigation:home_ItemSpace="20dp"
+        navigation:home_OrderMode="self"/>
+
+    <com.hxxdashai.android.navigation.widget.NavigationCursorView
+        android:id="@+id/mNavigationCursorView_id"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/mNavigationLinearLayout_id"
+        android:src="@mipmap/ic_navigation"/>
+
+    <TextView
+        android:id="@+id/mContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_text_bg"
+        android:focusable="true"
+        android:nextFocusDown="@id/mContent"
+        android:nextFocusLeft="@id/mContent"
+        android:nextFocusRight="@id/mContent"
+        android:nextFocusUp="@id/mNavigationLinearLayout_id"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+</RelativeLayout>
