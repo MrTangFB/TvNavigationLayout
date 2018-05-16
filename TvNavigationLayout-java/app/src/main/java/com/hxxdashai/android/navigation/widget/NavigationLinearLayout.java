@@ -122,7 +122,7 @@ public class NavigationLinearLayout extends LinearLayout {
         if (mNowPos != -1 && mNowPos < getChildCount()) {
             changeItemState(mNowPos, STATE_NO_SELECT);
         }
-        for (int i = 0; i < getChildCount() - 1; i++) {
+        for (int i = 0; i <= getChildCount() - 1; i++) {
             final int finalI = i;
             final TextView child = (TextView) getChildAt(i);
             child.setText(mDataList.get(i));
